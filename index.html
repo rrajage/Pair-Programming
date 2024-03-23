@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile App Prototype</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="screen" id="screen1">
+    <h1>Welcome Screen</h1>
+    <button onclick="navigateTo('screen2')">Next</button>
+  </div>
+  
+  <div class="screen" id="screen2" style="display:none;">
+    <h1>Login Screen</h1>
+    <input type="text" placeholder="Username">
+    <input type="password" placeholder="Password">
+    <button onclick="navigateTo('screen3')">Login</button>
+    <button onclick="navigateTo('screen1')">Back</button>
+  </div>
+  
+  <div class="screen" id="screen3" style="display:none;">
+    <h1>Dashboard</h1>
+    <p>Welcome, User!</p>
+    <button onclick="navigateTo('screen2')">Logout</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
